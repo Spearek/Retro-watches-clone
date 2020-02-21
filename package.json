@@ -1,0 +1,27 @@
+{
+  "name": "retro-watches-clone",
+  "version": "1.0.0",
+  "description": "Dan Henry, vintage watches page clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spearek/Retro-watches-clone.git"
+  },
+  "author": "Spearek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spearek/Retro-watches-clone/issues"
+  },
+  "homepage": "https://github.com/Spearek/Retro-watches-clone#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {}
+}
