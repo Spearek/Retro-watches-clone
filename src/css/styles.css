@@ -1,3 +1,6 @@
+:root {
+  font-size: 10px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -8,5 +11,209 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300; }
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/img/main page/bcg_image_big.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header .shippingInfo {
+  width: 100%;
+  background-color: #bb8d51;
+  height: 28px;
+  line-height: 28px;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 400; }
+
+header .collectiveContainer {
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear; }
+  header .collectiveContainer .profileItems i {
+    cursor: pointer; }
+
+header .collectiveContainer:hover {
+  background: rgba(0, 0, 0, 0.6); }
+
+header .logo {
+  padding-bottom: 15px;
+  width: 200px; }
+  header .logo img {
+    width: 100%; }
+
+.navigation {
+  width: 100%;
+  position: relative; }
+  .navigation__items {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 800px;
+    border-top: 1px solid #bb8d51;
+    margin: auto; }
+  .navigation__item {
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  .navigation__item a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px; }
+  .navigation__item a:hover {
+    color: #bb8d51; }
+
+.nestedNav {
+  min-height: 200px;
+  padding: 20px;
+  background: white;
+  width: 100vw;
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  display: none; }
+
+.navigation__item:hover .nestedNav {
+  display: block; }
+
+.nestedNav__watches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .nestedNav__watches__list {
+    font-size: 1.6rem;
+    list-style: none; }
+  .nestedNav__watches__list .item {
+    margin-bottom: 15px;
+    color: black; }
+  .nestedNav__watches__list a {
+    padding-right: 100px;
+    padding-left: 0;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .nestedNav__watches__list a:hover {
+    border-bottom: 1px solid #bb8d51;
+    color: #bb8d51; }
+  .nestedNav__watches__preview {
+    width: 270px;
+    height: 300px;
+    margin-right: 20px; }
+    .nestedNav__watches__preview img {
+      width: 100%; }
+  .nestedNav__watches__description {
+    width: 30%;
+    color: black; }
+    .nestedNav__watches__description h4 {
+      font-size: 4.5rem;
+      font-weight: 300; }
+    .nestedNav__watches__description p {
+      font-size: 2rem;
+      font-weight: 300; }
+
+.nestedNav__accessories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .nestedNav__accessories__item {
+    width: 15%;
+    margin: 30px;
+    cursor: pointer; }
+  .nestedNav__accessories__item img {
+    width: 100%; }
+  .nestedNav__accessories__item p {
+    color: black;
+    font-size: 2.2rem;
+    text-align: center; }
+
+.nestedNav__list {
+  min-height: 200px;
+  padding: 0 20px 20px 20px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  color: black;
+  display: none; }
+  .nestedNav__list__items {
+    list-style: none; }
+  .nestedNav__list__item {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+  .nestedNav__list__item:hover {
+    border-bottom: 1px solid #bb8d51;
+    color: #bb8d51; }
+
+.navigation__item:hover .nestedNav__list {
+  display: block; }
+
+.nestedNav__journal {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .nestedNav__journal__item {
+    width: 22%;
+    min-height: 250px; }
+  .nestedNav__journal__item img {
+    width: 100%;
+    height: 200px; }
+  .nestedNav__journal__item p {
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 25px; }
 
 /*# sourceMappingURL=styles.css.map */

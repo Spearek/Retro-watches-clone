@@ -1,3 +1,7 @@
+:root{
+    font-size: 10px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,3 +13,219 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/img/main page/bcg_image_big.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+
+    .shippingInfo{
+        width:100%;
+        background-color: #bb8d51;
+        height: 28px;
+        line-height: 28px;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 400;
+    }
+    .collectiveContainer{
+        padding: 10px 20px;
+        background: transparent;
+        color: white;
+        font-size: 1.6rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        transition: background 0.3s linear;
+
+        .profileItems i {
+            cursor: pointer;
+        }
+    }
+    .collectiveContainer:hover{
+        background:rgba($color: #000000, $alpha: 0.6);
+    }
+    .logo{
+        padding-bottom: 15px;
+        width:200px;
+
+        img{
+            width:100%;
+        }
+    }
+}
+.navigation{
+    width: 100%;
+    position: relative;
+
+    &__items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:800px;
+        border-top:1px solid #bb8d51;
+        margin: auto;
+    }
+    &__item{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    &__item a{
+        text-decoration: none;
+        color: white;
+        padding: 0 10px;
+    }
+    &__item a:hover{
+        color: #bb8d51;
+    }
+    
+}
+
+.nestedNav{
+    min-height: 200px;
+    padding: 20px;
+    background: white;
+    width: 100vw;
+    position:absolute;
+    top:60px;
+    left:-20px;
+    display:none;
+
+}
+
+.navigation__item:hover .nestedNav{
+    display:block;
+}
+
+.nestedNav__watches{
+    display: flex;
+    width:70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    &__list{
+        font-size: 1.6rem;
+        list-style: none;
+
+    }
+
+    &__list .item{
+        margin-bottom: 15px;   
+        color:black; 
+    }
+    &__list a{
+        padding-right:100px;
+        padding-left: 0;
+        text-decoration: none;
+        color:black;
+        transition: all 0.2s ease-out;
+    }
+    &__list a:hover{
+        border-bottom: 1px solid #bb8d51;
+        color:#bb8d51;
+    }
+    &__preview{
+        width:270px;
+        height: 300px;
+        margin-right: 20px;
+        img{
+            width: 100%;
+        }
+    }
+    &__description{
+        width:30%;
+        color:black;
+        h4{
+            font-size: 4.5rem;
+            font-weight: 300;
+            
+        }
+        p{
+            font-size: 2rem; 
+            font-weight: 300;
+        }
+    }
+}
+
+.nestedNav__accessories{
+    display: flex;
+    width:70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+        width:15%;
+        margin: 30px;
+        cursor: pointer;
+    }
+    &__item img{
+        width:100%;
+    }
+    &__item p{
+        color:black;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+}
+
+.nestedNav__list{
+    min-height: 200px;
+    padding: 0 20px 20px 20px;
+    background: white;
+    position: absolute;
+    top:60px;
+    color:black;
+    display:none;
+
+    &__items{
+        list-style: none;
+    }
+    &__item{
+        padding-top: 20px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+
+    }
+    &__item:hover{
+        border-bottom: 1px solid #bb8d51 ;
+        color: #bb8d51;
+    }
+}
+.navigation__item:hover .nestedNav__list{
+    display:block;
+}
+
+.nestedNav__journal{
+    width:95%;
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__item{
+        width:22%;
+        min-height: 250px;
+    }
+    &__item img{
+        width:100%;
+        height: 200px;
+    }
+    &__item p{
+        color:black;
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 25px;
+    }
+}
+
