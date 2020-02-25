@@ -12,10 +12,17 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300; }
 
+.section {
+  width: 100%; }
+
+.section__content {
+  width: 80%;
+  margin: 0 auto; }
+
 .hero {
   width: 100vw;
   height: 100vh;
-  background-image: url("../assets/img/main page/bcg_image_big.jpg");
+  background-image: url("../assets/img/main_page/bcg_image_big.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -215,5 +222,99 @@ header .logo {
     font-size: 1.6rem;
     text-align: center;
     padding-top: 25px; }
+
+.watches {
+  text-align: center;
+  padding-top: 40px; }
+  .watches__title {
+    font-size: 4.3rem;
+    font-weight: 300;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    line-height: 0.1rem;
+    margin: 40px 0 40px; }
+  .watches__title span {
+    background: #fff;
+    padding: 0 40px;
+    color: #bb8d51; }
+  .watches__description {
+    font-size: 2.3rem;
+    padding-top: 40px;
+    line-height: 150%;
+    color: #474747;
+    padding-bottom: 40px; }
+
+.watches__presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .watches__presentation__element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20%;
+    margin: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .watches__presentation__element h2 {
+    font-size: 4rem;
+    font-weight: 300; }
+  .watches__presentation__element p {
+    font-size: 2.2rem;
+    margin-top: 10px; }
+  .watches__presentation__element button {
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 90%;
+    font-size: 2.2rem;
+    font-weight: 200;
+    background: transparent;
+    border: 1px solid #bb8d51;
+    color: #bb8d51;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+
+.slider-container {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .slider-container .prev-element,
+  .slider-container .next-element {
+    cursor: pointer;
+    visibility: hidden; }
+
+.watches__slider {
+  width: 100%; }
+  .watches__slider img {
+    width: 100%;
+    margin: 0 auto; }
+
+.watches__presentation__element:hover .prev-element,
+.watches__presentation__element:hover .next-element {
+  visibility: visible; }
+
+.watches__presentation__element:hover button {
+  color: white;
+  background-color: #bb8d51; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -14,10 +14,18 @@ body{
     font-weight: 300;
 }
 
+.section{
+    width:100%;
+}
+.section__content{
+    width:80%;
+    margin: 0 auto;
+}
+
 .hero{
     width: 100vw;
     height: 100vh;
-    background-image: url('../assets/img/main page/bcg_image_big.jpg');
+    background-image: url('../assets/img/main_page/bcg_image_big.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,4 +236,102 @@ header{
         padding-top: 25px;
     }
 }
+
+.watches{
+    text-align: center;
+    padding-top: 40px;
+
+    &__title{
+        font-size: 4.3rem;
+        font-weight: 300;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        line-height: 0.1rem;
+        margin: 40px 0 40px;
+
+    }
+    &__title span{
+        background:#fff; 
+        padding:0 40px;
+        color: #bb8d51;      
+    }
+
+    &__description{
+        font-size: 2.3rem;
+        padding-top: 40px;
+        line-height: 150%;
+        color:#474747;
+        padding-bottom:40px;
+    }
+}
+
+.watches__presentation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__element{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 25px;
+        align-items: center;
+    }
+    &__element h2{
+        font-size: 4rem;
+        font-weight: 300;       
+    }
+    &__element p{
+        font-size: 2.2rem;
+        margin-top: 10px; 
+    }
+    &__element button{
+        margin-top: 20px;
+        padding: 10px 0;
+        width: 90%;
+        font-size: 2.2rem;
+        font-weight: 200;
+        background: transparent;
+        border:1px solid #bb8d51;
+        color: #bb8d51;
+        cursor: pointer;
+        transition: all .3s ease-out;
+
+    }
+
+}
+.slider-container{
+    width:100%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .prev-element,
+    .next-element{
+        cursor:pointer;
+        visibility: hidden;
+    }
+
+}
+.watches__slider{
+    width:100%;
+    img{
+        width:100%;
+        margin: 0 auto;
+    }
+}
+.watches__presentation__element:hover{
+    
+    .prev-element,
+    .next-element{
+        visibility: visible;
+    }
+    button{
+        color:white;
+        background-color: #bb8d51;
+    }
+}
+
+
 
